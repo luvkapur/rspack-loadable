@@ -1,6 +1,5 @@
 {
-  "ignore": ["client", "public"],
-  "execMap": {
-    "js": "babel-node"
-  }
+  "watch": ["src/server"],
+  "ext": "tsx,ts",
+  "exec": "tsc -p tsconfig.server.json && node lib/server/main.js"
 }
